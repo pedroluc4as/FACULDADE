@@ -3,20 +3,19 @@
 
 int main(){
     system("color 1f");
-    int p, i=1, cont=0;
-    printf("digite P: \n");
-    scanf("%d",&p);
-    while(i <= p){
-       if(p % i == 0){
+    int cont=0, gemeos=2;
+    for(int p=3; p <=1000; p++){
+        cont = 0;
+        for(int i=1; i <=p; i++){
+            if(p % i == 0){
             cont++;
-       }
-       i++;
+            }
+        }
+        if(cont == 2){
+            printf("%d e %d sao gemeos \n",gemeos, p);
+            gemeos = p;
+        }
     }
-    if(cont == 2){
-        printf("e primo");
-       }
-       else{
-        printf("nao e primo");
-       }
+
     return 0;
 }
