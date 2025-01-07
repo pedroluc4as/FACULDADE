@@ -4,9 +4,6 @@
 int main(){
     system("color 1f");
     int p, i=1, cont=0;
-    //printf("digite P: \n");
-    //scanf("%d",&p);
-
     for(p=2; p <= 20000; p++){
        while(i <= p){
        if(p % i == 0){
@@ -14,14 +11,17 @@ int main(){
        }
        i++;
     }
+    i=1;
     if(cont == 2){
-        printf("e primo");
+        printf("E primo ");
        }
        else{
-        printf("nao e primo");
+        printf("Nao e primo ");
        }
     printf("%d \n",p);
+    cont = 0;
     }
+
 
 
     return 0;
