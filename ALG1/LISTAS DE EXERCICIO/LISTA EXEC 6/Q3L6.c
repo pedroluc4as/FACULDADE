@@ -7,11 +7,11 @@ int main()
     {
         if(i<8)
         {
-            printf("MATRICULA LOGICA %d E MATRICULA L. PROGRAMACAO %d \n",vet_matlogica[i],vet_matprog[i]);
+            printf("Numero da mat Logica = %d e Numero da mat Linguagem = %d \n",vet_matlogica[i],vet_matprog[i]);
         }
         else
         {
-            printf("MATRICULA LOGICA %d \n",vet_matlogica[i]);
+            printf("Numero da mat logica = %d \n",vet_matlogica[i]);
         }
     }
     printf("\n\n\n");
@@ -20,7 +20,7 @@ int main()
         for(int j = 0; j < 8; j++)
         {
             if(vet_matlogica[i] == vet_matprog[j]){
-                printf("Matricula do aluno esta duplicada %d nas posicoes %d e %d \n",vet_matlogica[i],i+1,j+1);
+                printf("Matricula %d esta duplicada nas posicoes %d e %d \n",vet_matlogica[i],i+1,j+1);
             }
         }
     }
