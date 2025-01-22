@@ -1,6 +1,6 @@
-/*Escrever um algoritmo que lê uma matriz A(15,5) e a escreva (valores randômicos*).
-Verifique, a seguir, quais os elementos de A que estão repetidos e quantas vezes cada
-um está repetido. Escrever cada elemento repetido com uma mensagem dizendo que
+/*Escrever um algoritmo que lÃª uma matriz A(15,5) e a escreva (valores randÃ´micos*).
+Verifique, a seguir, quais os elementos de A que estÃ£o repetidos e quantas vezes cada
+um estÃ¡ repetido. Escrever cada elemento repetido com uma mensagem dizendo que
 o elemento aparece X vezes em A.*/
 #include <stdio.h>
 #include <conio.h>
@@ -15,8 +15,8 @@ int main()
     {
         for(int j=0; j<5; j++)
         {
-            A[i][j] = rand() % 15;
-            printf("%d ", A[i][j]);
+            A[i][j] = rand() % 100;
+            printf("[%d] ", A[i][j]);
         }
         printf("\n");
     }
@@ -37,7 +37,7 @@ int main()
             }
             if(cont>1)
             {
-                printf("O numero %d aparece %d vezes \n", A[i][j],cont);
+                printf("O numero %d aparece *%d vezes \n", A[i][j],cont);
             }
 
         }
